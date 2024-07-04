@@ -26,4 +26,10 @@ router.get('/pedido/:token', pedidos.obtenerPedido)
 
 router.get('/verificarToken/:token', usuario.verificarToken)
 
+router.put('/producto/actualizar/:id', productos.actualizarProducto)
+
+router.delete('/producto/borrar/:id', productos.eliminarProducto)
+
+router.post('/producto/agregar', productos.agregarProducto)
+
 export default router
